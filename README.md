@@ -1,18 +1,14 @@
-# stream-aggregate
+# stream-aggregate-promise
 
 Aggregates a Node.js stream and calls a callback with the accumulated result of
 first encountered error.
 
-    var aggregate = require('stream-aggregate')
+    var aggregate = require('stream-aggregate-promise')
 
-    aggregate(stream, function(err, result) {
-      ...
-    });
+    aggregate(stream)
+      .then(function(result) { ... })
+      .fail(function(err) { ... })
 
 Binary streams (which emit buffer objects) are aggregated into a single buffer,
 object streams -- into an array of emitted objects and streams of strings --
 into a single concatenated string.
-
-The main difference between this library and `concat-stream` is that
-`stream-aggregate` calls callback with an error which is usually desired
-behaviour.
