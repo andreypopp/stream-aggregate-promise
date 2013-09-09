@@ -1,0 +1,32 @@
+{
+  "name": "stream-aggregate-promise",
+  "version": "0.0.0",
+  "description": "Aggregate streams of string, buffers and objects into promise",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha specs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "andreypopp/stream-aggregate-promise"
+  },
+  "keywords": [
+    "stream",
+    "promise",
+    "aggregate",
+    "buffer",
+    "string",
+    "object"
+  ],
+  "author": "Andrey Popp <8mayday@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "semver": "~2.1.0",
+    "mocha": "~1.12.1",
+    "through": "~2.3.4"
+  },
+  "dependencies": {
+    "stream-aggregate": "~0.1.0",
+    "kew": "~0.1.7"
+  }
+}
