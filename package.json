@@ -1,6 +1,6 @@
 {
   "name": "stream-aggregate-promise",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Aggregate streams of string, buffers and objects into promise",
   "main": "index.js",
   "scripts": {
