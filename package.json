@@ -26,7 +26,7 @@
     "through": "~2.3.4"
   },
   "dependencies": {
-    "stream-aggregate": "~0.1.0",
+    "stream-aggregate": "~0.1.1",
     "kew": "~0.1.7"
   }
 }
