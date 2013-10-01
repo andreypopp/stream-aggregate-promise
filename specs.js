@@ -2,13 +2,16 @@ var assert = require('assert'),
     through = require('through'),
     aggregate = require('./index');
 
-describe('stream-aggregate', function() {
+describe('stream-aggregate-promise', function() {
 
   it('aggregates object stream', function(done) {
     var stream = through();
 
     aggregate(stream)
-      .then(assert.deepEqual.bind(null, [1, 2]))
+      .then(function(result) {
+        assert.ok(Array.isArray(result));
+        assert.deepEqual(result, [1, 2]);
+      })
       .fail(assert.notOk)
       .fin(done);
 
