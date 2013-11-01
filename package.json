@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "stream-aggregate": "~0.1.1",
-    "kew": "~0.1.7"
+    "kew": "~0.3.0"
   }
 }
